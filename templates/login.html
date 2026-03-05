@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="card">
-    <h1>🔐 Lucky Coin Login</h1>
+    <h2>Lucky Coin - Đăng nhập</h2>
     <form method="POST">
-        <input name="username" placeholder="Username">
-        <input name="password" type="password" placeholder="Password">
-        <button class="green">Login</button>
+        <input name="username" placeholder="Tên đăng nhập" required>
+        <input name="password" type="password" placeholder="Mật khẩu" required>
+        <button type="submit" class="green">Đăng nhập</button>
     </form>
-    <a href="/register">Tạo tài khoản</a>
+    <a href="/register">Chưa có tài khoản? Đăng ký ngay</a>
 </div>
 {% endblock %}
