@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+    <h1>🎰 Lucky Coin</h1>
+    <h3>👤 {{username}}</h3>
+    <h2>💰 {{money}} LC</h2>
+
+    <a href="/dice"><button class="green">🎲 Tài / Xỉu</button></a>
+    <a href="/coin"><button class="blue">🪙 Tung Đồng Xu</button></a>
+    <a href="/logout"><button class="red">🚪 Đăng xuất</button></a>
+</div>
+{% endblock %}
