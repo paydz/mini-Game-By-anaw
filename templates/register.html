@@ -1,3 +1,12 @@
-
-<input name="username" placeholder="Tên đăng nhập" required>
-<input name="password" type="password" placeholder="Mật khẩu" required>
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+    <h2>Đăng ký tài khoản</h2>
+    <form method="POST">
+        <input name="username" placeholder="Tên đăng nhập" required>
+        <input name="password" type="password" placeholder="Mật khẩu" required>
+        <button type="submit" class="blue">Đăng ký ngay</button>
+    </form>
+    <a href="/login">Đã có tài khoản? Đăng nhập</a>
+</div>
+{% endblock %}
