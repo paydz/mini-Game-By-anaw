@@ -1,1 +1,12 @@
-
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+    <h1>🔐 Lucky Coin Login</h1>
+    <form method="POST">
+        <input name="username" placeholder="Username">
+        <input name="password" type="password" placeholder="Password">
+        <button class="green">Login</button>
+    </form>
+    <a href="/register">Tạo tài khoản</a>
+</div>
+{% endblock %}
