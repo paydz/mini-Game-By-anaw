@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+<h2>Tài / Xỉu</h2>
+<p>Tiền: {{money}}</p>
+<form method="POST">
+<input name="bet" type="number" placeholder="Tiền cược"><br>
+<button name="choice" value="tai" class="green">TÀI</button>
+<button name="choice" value="xiu" class="blue">XỈU</button>
+</form>
+<p>{{result}}</p>
+<p>Kết quả: {{dice}}</p>
+<a href="/">Về trang chủ</a>
+</div>
+{% endblock %}
